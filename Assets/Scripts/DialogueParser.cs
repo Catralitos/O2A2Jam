@@ -63,14 +63,14 @@ public class DialogueParser : MonoBehaviour
                 if (line != null) {
                     string[] lineData = line.Split(';');
                     if (lineData[0] == "Choice") {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "");
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0);
                         lineEntry.Options = new string[lineData.Length-1];
                         for (int i = 1; i < lineData.Length; i++) {
                             lineEntry.Options[i-1] = lineData[i];
                         }
                         lines.Add(lineEntry);
                     } else {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), lineData[3]);
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]));
                         lines.Add(lineEntry);
                     }
                 }
@@ -80,11 +80,6 @@ public class DialogueParser : MonoBehaviour
         }
     }
     
-    public string GetPosition(int lineNumber)
-    {
-        return lineNumber < lines.Count ? lines[lineNumber].Position : "";
-    }
-
     public string GetName(int lineNumber)
     {
         return lineNumber < lines.Count ? lines[lineNumber].Name : "";

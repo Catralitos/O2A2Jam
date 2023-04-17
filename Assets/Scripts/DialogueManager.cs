@@ -11,7 +11,6 @@ public class DialogueManager : MonoBehaviour
     [HideInInspector] public string dialogue, characterName;
     [HideInInspector] public int lineNum;
     private int pose;
-    private string position;
     private string[] options;
     [HideInInspector] public bool playerTalking;
     private readonly List<ChoiceButton> buttons = new List<ChoiceButton> ();
@@ -28,7 +27,6 @@ public class DialogueManager : MonoBehaviour
         dialogue = "";
         characterName = "";
         pose = 0;
-        position = "L";
         playerTalking = false;
         parser = DialogueParser.Instance;
         lineNum = 0;
@@ -47,16 +45,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void ShowDialogue() {
-        //ResetImages ();
         ParseLine ();
-    }
-
-    private void ResetImages() {
-        if (characterName != "") {
-            GameObject character = characters.Find(c => c.characterName == characterName).gameObject;
-            Image currSprite = character.GetComponent<Image>();
-            currSprite.sprite = null;
-        }
     }
 
     private void ParseLine() {
@@ -65,14 +54,12 @@ public class DialogueManager : MonoBehaviour
             characterName = parser.GetName (lineNum);
             dialogue = parser.GetContent (lineNum);
             pose = parser.GetPose (lineNum);
-            position = parser.GetPosition (lineNum);
             DisplayImages();
         } else {
             playerTalking = true;
             characterName = "";
             dialogue = "";
             pose = 0;
-            position = "";
             options = parser.GetOptions(lineNum);
             CreateButtons();
         }
@@ -82,27 +69,10 @@ public class DialogueManager : MonoBehaviour
         if (characterName != "") {
             
             Character character = characters.Find(c => c.characterName == characterName);
-
-            //SetSpritePositions(character.gameObject);
-
+            
             Image currSprite = character.gameObject.GetComponent<Image>();
             currSprite.sprite = character.characterPoses[pose];
         }
-    }
-
-    private void SetSpritePositions(GameObject spriteObj) {
-        Vector3 position2 = spriteObj.transform.position;
-        position2 = position switch
-        {
-            "L" => new Vector3(-6, 0),
-            "R" => new Vector3(6, 0),
-            _ => position2
-        };
-
-        Vector3 position1 = position2;
-        position1 = new Vector3 (position1.x, position1.y, 0);
-        position2 = position1;
-        spriteObj.transform.position = position2;
     }
 
     private void CreateButtons()

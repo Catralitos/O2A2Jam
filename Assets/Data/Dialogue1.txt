@@ -1,6 +1,6 @@
-MC;Hey what's up;0;R
-AltMC;Nothing much man;0;L
-MC;Oh that's cool;1;R
+MC;Hey what's up;0
+AltMC;Nothing much man;0
+MC;Oh that's cool;1
 Choice;Restart:line,0;Continue:scene,2
-MC;This is a test;2;L
-AltMC;Test test test test;2;R
+MC;This is a test;2
+AltMC;Test test test test;2
