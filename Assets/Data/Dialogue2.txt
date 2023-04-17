@@ -1,0 +1,6 @@
+MC;Hey what's up;0;R
+AltMC;Nothing much man;0;L
+MC;Oh that's cool;1;R
+Choice;Restart:line,0;Continue:line,4
+MC;This is a test;2;L
+AltMC;Test test test test;2;R
