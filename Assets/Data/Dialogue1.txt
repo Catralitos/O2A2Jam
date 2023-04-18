@@ -1,6 +1,6 @@
 MC;Hey what's up;0
 AltMC;Nothing much man;0
 MC;Oh that's cool;1
-Choice;Restart:line,0;Continue:scene,2
+Choice;This is the good option:good,4;This is the bad option:bad,4
 MC;This is a test;2
 AltMC;Test test test test;2

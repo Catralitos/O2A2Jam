@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -21,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceBoxHolder;
     public GameObject choiceBoxPrefab;
 
+    public int nextSceneIndex;
+    
     private void Start () {
         parser = DialogueParser.Instance;
         parser.GetFile();
@@ -30,6 +33,7 @@ public class DialogueManager : MonoBehaviour
         playerTalking = false;
         parser = DialogueParser.Instance;
         lineNum = 0;
+        
         ShowDialogue();
         lineNum++;
         UpdateUI ();
@@ -49,19 +53,24 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void ParseLine() {
-        if (parser.GetName (lineNum) != "Choice") {
-            playerTalking = false;
-            characterName = parser.GetName (lineNum);
-            dialogue = parser.GetContent (lineNum);
-            pose = parser.GetPose (lineNum);
-            DisplayImages();
-        } else {
+        if (parser.GetName(lineNum) == "")
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        } 
+        else if (parser.GetName (lineNum) == "Choice") {
             playerTalking = true;
             characterName = "";
             dialogue = "";
             pose = 0;
             options = parser.GetOptions(lineNum);
             CreateButtons();
+        } 
+        else {
+            playerTalking = false;
+            characterName = parser.GetName (lineNum);
+            dialogue = parser.GetContent (lineNum);
+            pose = parser.GetPose (lineNum);
+            DisplayImages();
         }
     }
 

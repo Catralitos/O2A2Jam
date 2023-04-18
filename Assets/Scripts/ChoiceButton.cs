@@ -21,13 +21,14 @@ public class ChoiceButton : MonoBehaviour {
         box.playerTalking = false;
         switch (command)
         {
-            case "line":
-                box.lineNum = int.Parse(commandModifier);
-                box.ShowDialogue();
+            case "good":
+                GameManager.Instance.IncreaseConfidence();
                 break;
-            case "scene":
-                SceneManager.LoadScene("Scene" + commandModifier);
+            case "bad":
+                GameManager.Instance.DecreaseConfidence();
                 break;
         }
+        box.lineNum = int.Parse(commandModifier);
+        box.ShowDialogue();
     }
 }

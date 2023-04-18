@@ -1011,6 +1011,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 34569588}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: nextSceneIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: choiceBoxHolder
       value: 
       objectReference: {fileID: 1313306929}
