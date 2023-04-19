@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class VignetteStarter : MonoBehaviour
 {
-    [Range(1, 4)] public int vignetteNumber;  
+    [Range(1, 6)] public int vignetteNumber;  
     public int sceneIndex;
     public LayerMask playerLayer;
 

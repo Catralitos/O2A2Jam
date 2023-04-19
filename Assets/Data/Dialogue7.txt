@@ -1,0 +1,10 @@
+﻿?????;Sorry to interrupt again, but I simply must ask this: How are your parents putting up with… your whole deal? I can’t imagine they’re taking it well.;0
+Ava;That is none of your business.;0
+?????;They hate it. Got it.;0
+Ava;No they don’t! My mom tries to get me to behave more like she does, that’s all.;0
+?????;So… she hates you?;0
+Choice;She loves me for who I am, she’s simply trying to push me in the direction she believes is best, that doesn’t mean she doesn’t love me as I am.:good,6;They’ve invested so much in me… the least I could do is follow the path they’ve laid out for me.:bad,8
+?????;Then she’s just as misguided as you are.;0
+Next Scene;;10
+?????;See, was it that hard to see that?;0
+Next Scene;;10

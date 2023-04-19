@@ -1,0 +1,5 @@
+﻿Narrator;With a gust of wind, she feels her body being pulled into her bed. The wind blows through her, grazing her cheeks with increasing strength.;0
+Narrator;She painstakingly opens her eyes, finding herself in a dark void, with nondescript flooring floating and zigzagging in a seemingly random pattern.;0
+Narrator;She falls until she’s floating just above the flooring. Ava reaches down to touch it, but she can’t. The flooring is keeping her close but never close enough to touch.;0
+Narrator;As her mind is adjusting to the sight of a night sky without any stars, she notices a bright light, floating on one of the ends to the path she finds herself in. She flails her arms, trying to swim in the void;0
+Next Scene;;10

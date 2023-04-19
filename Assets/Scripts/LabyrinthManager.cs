@@ -23,6 +23,6 @@ public class LabyrinthManager : MonoBehaviour
             vignetteStarters[j].SetActive(j == index);
         }
 
-        Player.Instance.transform.position = GameManager.Instance.lastPlayerPos;
+        Player.Instance.gameObject.transform.position = GameManager.Instance.lastPlayerPos;
     }
 }

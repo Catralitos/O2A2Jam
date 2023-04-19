@@ -21,8 +21,6 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameBox;
     public GameObject choiceBoxHolder;
     public GameObject choiceBoxPrefab;
-
-    public int nextSceneIndex;
     
     private void Start () {
         parser = DialogueParser.Instance;
@@ -40,7 +38,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void Update () {
-        if (Input.GetMouseButtonDown (0) && playerTalking == false) {
+        if ((Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.Space))&& playerTalking == false) {
             ShowDialogue();
 
             lineNum++;
@@ -53,10 +51,19 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void ParseLine() {
-        if (parser.GetName(lineNum) == "")
+        if (parser.GetName(lineNum) == "Next Scene")
         {
-            SceneManager.LoadScene(nextSceneIndex);
-        } 
+            pose = parser.GetPose(lineNum);
+            SceneManager.LoadScene(pose);
+        }
+        else if (parser.GetName(lineNum) == "Narrator")
+        {
+            playerTalking = false;
+            characterName = "";
+            dialogue = parser.GetContent (lineNum);
+            pose = parser.GetPose (lineNum);
+            DisplayImages();
+        }
         else if (parser.GetName (lineNum) == "Choice") {
             playerTalking = true;
             characterName = "";
