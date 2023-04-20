@@ -356,6 +356,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 409140206127129870, guid: 1a919a1181f977345851468927784c2a, type: 3}
   m_PrefabInstance: {fileID: 819862842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &819862847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8355800134307434819, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 819862842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1321106036
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +429,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1652440855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2924765054721977787, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 819862842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4153326613419308585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -441,6 +451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 819862844}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: nameBoxParent
+      value: 
+      objectReference: {fileID: 819862847}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: nextSceneIndex
       value: 10
       objectReference: {fileID: 0}
@@ -448,6 +462,10 @@ PrefabInstance:
       propertyPath: choiceBoxHolder
       value: 
       objectReference: {fileID: 819862846}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: dialogueBoxParent
+      value: 
+      objectReference: {fileID: 1652440855}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: characters.Array.size
       value: 1

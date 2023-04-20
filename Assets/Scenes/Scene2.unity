@@ -215,6 +215,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1169510008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8355800134307434819, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 1565686277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1321106036
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +288,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1483085244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2924765054721977787, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 1565686277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1565686277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,6 +301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3390307454856135132, guid: 1a919a1181f977345851468927784c2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4756836050932060276, guid: 1a919a1181f977345851468927784c2a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -471,6 +485,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1565686280}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: nameBoxParent
+      value: 
+      objectReference: {fileID: 1169510008}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: nextSceneIndex
       value: 3
       objectReference: {fileID: 0}
@@ -478,6 +496,10 @@ PrefabInstance:
       propertyPath: choiceBoxHolder
       value: 
       objectReference: {fileID: 1565686278}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: dialogueBoxParent
+      value: 
+      objectReference: {fileID: 1483085244}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: characters.Array.size
       value: 2

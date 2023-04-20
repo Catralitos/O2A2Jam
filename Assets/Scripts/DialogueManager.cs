@@ -21,6 +21,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameBox;
     public GameObject choiceBoxHolder;
     public GameObject choiceBoxPrefab;
+    public GameObject dialogueBoxParent;
+    public GameObject nameBoxParent;
     
     private void Start () {
         parser = DialogueParser.Instance;
@@ -93,6 +95,7 @@ public class DialogueManager : MonoBehaviour
 
     private void CreateButtons()
     {
+        dialogueBoxParent.SetActive(false);
         foreach (string t in options)
         {
             GameObject button = Instantiate(choiceBoxPrefab, choiceBoxPrefab.transform.position, Quaternion.identity, choiceBoxHolder.transform);
@@ -106,10 +109,12 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateUI() {
         if (!playerTalking) {
+            dialogueBoxParent.SetActive(true);
             ClearButtons();
         }
         dialogueBox.text = dialogue;
-        nameBox.text = characterName;
+        nameBox.text = characterName.ToUpper();
+        nameBoxParent.SetActive(characterName != "");
     }
 
     private void ClearButtons() {

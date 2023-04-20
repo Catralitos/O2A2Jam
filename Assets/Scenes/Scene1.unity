@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &85556515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8355800134307434819, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 302679190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &254586079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,6 +257,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3390307454856135132, guid: 1a919a1181f977345851468927784c2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4756836050932060276, guid: 1a919a1181f977345851468927784c2a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -641,6 +650,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &592602000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2924765054721977787, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 302679190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &666553139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -960,6 +974,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 302679194}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: nameBoxParent
+      value: 
+      objectReference: {fileID: 85556515}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: nextSceneIndex
       value: 2
       objectReference: {fileID: 0}
@@ -967,6 +985,10 @@ PrefabInstance:
       propertyPath: choiceBoxHolder
       value: 
       objectReference: {fileID: 302679192}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: dialogueBoxParent
+      value: 
+      objectReference: {fileID: 592602000}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: characters.Array.size
       value: 6

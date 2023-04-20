@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,11 +36,25 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public float currentConfidence;
     [NonSerialized] public readonly bool[] VignettesDone = { false, false, false, false, false, false};
 
-    [HideInInspector] public Vector3 lastPlayerPos = new(1.5f,4.5f,20f);
+    [HideInInspector] public Vector3 lastPlayerPos = new(1.5f,4.5f,18f);
 
+    public Canvas canvas;
+    
     private void Start()
     {
-        lastPlayerPos = new Vector3(1.5f, 4.5f, 20f);
+        lastPlayerPos = new Vector3(1.5f, 4.5f, 18f);
+        //canvas.transform.position = new Vector3(canvas.transform.position.x, canvas.transform.position.y, -0.1f);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        canvas.worldCamera = Camera.main;;
+    }
+
+    private void Update()
+    {
+        canvas.gameObject.SetActive(SceneManager.GetActiveScene().buildIndex is not (1 or 2));
     }
 
     public void IncreaseConfidence()

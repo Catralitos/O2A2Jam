@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &81244546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8355800134307434819, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 2075311525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +223,11 @@ Transform:
 --- !u!1 &1056993995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 409140206127129870, guid: 1a919a1181f977345851468927784c2a, type: 3}
+  m_PrefabInstance: {fileID: 2075311525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1290390691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2924765054721977787, guid: 1a919a1181f977345851468927784c2a, type: 3}
   m_PrefabInstance: {fileID: 2075311525}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1321106036
@@ -461,6 +471,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2075311527}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: nameBoxParent
+      value: 
+      objectReference: {fileID: 81244546}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: nextSceneIndex
       value: 10
       objectReference: {fileID: 0}
@@ -468,6 +482,10 @@ PrefabInstance:
       propertyPath: choiceBoxHolder
       value: 
       objectReference: {fileID: 1056993995}
+    - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
+      propertyPath: dialogueBoxParent
+      value: 
+      objectReference: {fileID: 1290390691}
     - target: {fileID: 404841209314315342, guid: 859c72b4ccef8d746a301441c5c52cba, type: 3}
       propertyPath: characters.Array.size
       value: 3
