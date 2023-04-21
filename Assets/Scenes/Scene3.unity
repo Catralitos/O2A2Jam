@@ -428,6 +428,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5221736684626351971, guid: 1a919a1181f977345851468927784c2a, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 5221736684626351971, guid: 1a919a1181f977345851468927784c2a, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2168437215593903180, guid: 1a919a1181f977345851468927784c2a, type: 3}

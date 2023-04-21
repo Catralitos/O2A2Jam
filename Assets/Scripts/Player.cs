@@ -30,7 +30,6 @@ public class Player : MonoBehaviour
 
     #endregion
     
-    
     public float baseSpeed;
 
     private Rigidbody2D _rb;

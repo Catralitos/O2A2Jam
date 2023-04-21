@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public float confidenceIncrease;
+    public float startingConfidence = 0;
     [HideInInspector] public float currentConfidence;
     [NonSerialized] public bool[] VignettesDone;
 
@@ -47,10 +48,11 @@ public class GameManager : MonoBehaviour
     {
         lastPlayerPos = new Vector3(1.5f, 4.5f, 18f);
         VignettesDone = new []{ false, false, false, false, false, false};
+        currentConfidence = startingConfidence;
         if (!startedOnce)
         {
-            /*_audioManager = GetComponent<AudioManager>();
-            _audioManager.Play("GameMusic");*/
+            _audioManager = GetComponent<AudioManager>();
+            _audioManager.Play("GameMusic");
             SceneManager.sceneLoaded += OnSceneLoaded;
             startedOnce = true;
         }
