@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
         {
             _audioManager = GetComponent<AudioManager>();
             _audioManager.Play("GameMusic");
+            Debug.Log("Tocou musica");
             SceneManager.sceneLoaded += OnSceneLoaded;
             startedOnce = true;
         }

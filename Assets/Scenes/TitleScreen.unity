@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312597763895494967, guid: 39466ce813934ed46a2295107d7ee616, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1367017964478022389, guid: 39466ce813934ed46a2295107d7ee616, type: 3}
       propertyPath: m_Camera
       value: 

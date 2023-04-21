@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   confidenceIncrease: 0.5
+  startingConfidence: 0
   currentConfidence: 0
   lastPlayerPos: {x: 0, y: 0, z: 0}
   canvas: {fileID: 1367017964478022389}
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: GameMusic
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: ded347c8700dedb4482c1db0a7b8e274, type: 3}
     volume: 0.2
     pitch: 1
     spatialBlend: 0

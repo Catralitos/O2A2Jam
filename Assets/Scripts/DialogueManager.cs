@@ -93,18 +93,23 @@ public class DialogueManager : MonoBehaviour
         }
         else {
             
-            AltMc character = (AltMc)characters.Find(c => c.characterName == "?????");
+            AltMc altMc = (AltMc)characters.Find(c => c.characterName == "?????");
+            Image currSprite1 = altMc.gameObject.GetComponent<Image>();
+            currSprite1.sprite = altMc.characterPoses[pose];
             
-            Image currSprite = character.gameObject.GetComponent<Image>();
-            currSprite.sprite = character.characterPoses[pose];
-            if (pose != character.characterPoses.Length - 1)
+            if (pose != altMc.characterPoses.Length - 1)
             {
-                character.StartScratches();
+                altMc.StartScratches();
             }
             else
             {
-                character.StopScratches();
+                altMc.StopScratches();
             }
+            
+            Character character = characters.Find(c => c.characterName == "Ava");
+
+            Image currSprite2 = character.gameObject.GetComponent<Image>();
+            currSprite2.sprite = character.characterPoses[pose];
         }
     }
 

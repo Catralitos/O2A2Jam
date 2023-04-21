@@ -756,8 +756,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Game Made By\n\nCatralitos - Programmer\n\niBatisha - Background Art,
-    Music\n\nozedascouves - Character Art, Concept and Writing\n\n\nDeveloped in
-    conjunction with GameDev T\xE9cnico"
+    Music\n\nSammy_Lammy - Character Art, Concept and Writing\n\n\nDeveloped in conjunction
+    with GameDev T\xE9cnico"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a91e80dba80577b48b211f72276958ed, type: 2}
   m_sharedMaterial: {fileID: -809767693591540118, guid: a91e80dba80577b48b211f72276958ed, type: 2}
