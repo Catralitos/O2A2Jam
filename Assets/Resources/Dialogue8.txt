@@ -1,0 +1,9 @@
+﻿?????;My god, I think you’re rubbing off on me! I forgot to ask: What the hell is going on with you? I can tell you’re not normal, but I can’t pinpoint what.;3
+Ava;I… don’t know;3
+?????;You don’t even have <b>that</b> figured out?”;3
+Ava;(I’m still thinking about that girl I saw yesterday… Am I into girls?);6
+Ava;(I felt so bad wearing that dress my mom made me wear for my uncle’s wedding, I can’t stand being “ladylike”, am I even a girl?);6
+?????;Hello?? Is anyone there?;3
+Ava;Shut up! Leave me alone! I’m so close.;0
+Narrator;She takes a deep breath, trying her best to focus. She sets her eyes on the light, and pushes forward.;3
+Next Scene;;10

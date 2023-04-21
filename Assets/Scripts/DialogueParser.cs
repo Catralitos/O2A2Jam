@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
-using System.IO;
-using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine.SceneManagement;
 
 public class DialogueParser : MonoBehaviour
@@ -42,41 +41,41 @@ public class DialogueParser : MonoBehaviour
 
     public void GetFile()
     {
-        string file = "Assets/Data/Dialogue";
+        string file = "Dialogue";
         int sceneNum = SceneManager.GetActiveScene().buildIndex;
         file += sceneNum;
-        file += ".txt";
+        //file += ".txt";
         
         lines = new List<DialogueLine>();
-        
-        LoadDialogue (file);
+        TextAsset ta = (TextAsset) Resources.Load(file, typeof(TextAsset));
+        LoadDialogue (TextAssetToList(ta));
     }
 
-    private void LoadDialogue(string filename) {
-        if (lines.Count > 0) lines.Clear();
-        string line;
-        StreamReader r = new StreamReader (filename);
+    private static List<string> TextAssetToList(TextAsset ta)
+    {
+        string[] arrayString = ta.text.Split('\n');
+        return arrayString.ToList();
+    }
 
-        using (r) {
-            do {
-                line = r.ReadLine();
-                if (line != null) {
-                    string[] lineData = line.Split(';');
-                    if (lineData[0] == "Choice") {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0);
-                        lineEntry.Options = new string[lineData.Length-1];
-                        for (int i = 1; i < lineData.Length; i++) {
-                            lineEntry.Options[i-1] = lineData[i];
-                        }
-                        lines.Add(lineEntry);
-                    } else {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]));
-                        lines.Add(lineEntry);
+    
+    private void LoadDialogue(List<string> fileContents) {
+        if (lines.Count > 0) lines.Clear();
+
+        foreach(string line in fileContents){
+            if (line != null) {
+                string[] lineData = line.Split(';');
+                if (lineData[0] == "Choice") {
+                    DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0);
+                    lineEntry.Options = new string[lineData.Length-1];
+                    for (int i = 1; i < lineData.Length; i++) {
+                        lineEntry.Options[i-1] = lineData[i];
                     }
+                    lines.Add(lineEntry);
+                } else {
+                    DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]));
+                    lines.Add(lineEntry);
                 }
             }
-            while (line != null);
-            r.Close();
         }
     }
     

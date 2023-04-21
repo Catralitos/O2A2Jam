@@ -755,12 +755,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game Made By\n\nCatralitos - Programmer\n\nozedascouves - Character Art,
-    Concept and Writing\n\nbatisha - Background Art, Music\n\n\nDeveloped in conjunction
-    with GameDev T\xE9cnico"
+  m_text: "Game Made By\n\nCatralitos - Programmer\n\niBatisha - Background Art,
+    Music\n\nozedascouves - Character Art, Concept and Writing\n\n\nDeveloped in
+    conjunction with GameDev T\xE9cnico"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a91e80dba80577b48b211f72276958ed, type: 2}
+  m_sharedMaterial: {fileID: -809767693591540118, guid: a91e80dba80577b48b211f72276958ed, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.2
+  m_fontSize: 55.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -872,8 +872,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: afd990b40ff50084fb1f56220e3ff4c8, type: 2}
+  m_sharedMaterial: {fileID: 1042822769751784035, guid: afd990b40ff50084fb1f56220e3ff4c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.6
+  m_fontSize: 80
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1167,8 +1167,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Return to Title Screen
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: afd990b40ff50084fb1f56220e3ff4c8, type: 2}
+  m_sharedMaterial: {fileID: 1042822769751784035, guid: afd990b40ff50084fb1f56220e3ff4c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55.7
+  m_fontSize: 55.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

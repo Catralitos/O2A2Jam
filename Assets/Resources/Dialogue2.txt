@@ -1,0 +1,4 @@
+Narrator;She jolts from her bed, catching her breath.;1
+Ava;Please let me sleep, brain. I’m so tired of that dream.;1
+Narrator;She falls to her bed, curling up and praying for rest;5
+Next Scene;;3

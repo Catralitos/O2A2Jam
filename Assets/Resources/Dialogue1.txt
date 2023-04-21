@@ -1,0 +1,10 @@
+Narrator;Children scream while adults blabber above their noise, more annoying than the toddlers they’re supposed to be better than. Ava sits in the corner, trying her hardest to blend into the pattern of the tablecloth.;5
+Grandpa;How's school been treating you?;5
+Ava;It's-;5
+Dad;She struggles but I’m sure our little girl will finish her degree.;5
+Grandma;I’m sure she will, she just needs a good man to get her on the right track. Any handsome boys been eyeing you?;5
+Ava;No-;5
+Narrator;A sudden sharp slap on her back kindly replaces this awkward conversation with worse pain.;5
+Uncle Jeff;With a face and body like yours, I’m sure the boys can’t help staring, eh?;5
+Narrator;His eyes shake Ava to her core. She freezes, eyes darting around helplessly. Her jaw feels heavy, paining to open. She screams, but a quiet wail is all that comes out.;5
+Next Scene;;2

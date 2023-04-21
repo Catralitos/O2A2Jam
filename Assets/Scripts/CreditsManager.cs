@@ -17,12 +17,7 @@ public class CreditsManager : MonoBehaviour
     /// The exit game button
     /// </summary>
     public Button exitButton;
-    /// <summary>
-    /// The AudioManager
-    /// </summary>
-    private AudioManager _audioManager;
-        
-
+    
     /// <summary>
     /// Starts this instance.
     /// </summary>
@@ -30,8 +25,6 @@ public class CreditsManager : MonoBehaviour
     {
         backToTitle.onClick.AddListener(ReplayGame);
         exitButton.onClick.AddListener(ExitGame);
-        /*_audioManager = GetComponent<AudioManager>();
-            _audioManager.Play("Credits");*/
     }
 
 
@@ -40,6 +33,7 @@ public class CreditsManager : MonoBehaviour
     /// </summary>
     private static void ReplayGame()
     {
+        GameManager.Instance.Start();
         SceneManager.LoadScene(0);
     }
 

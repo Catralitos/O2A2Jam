@@ -8,19 +8,10 @@ public class LabyrinthManager : MonoBehaviour
     private void Start()
     {
         bool[] vignettesDone = GameManager.Instance.VignettesDone;
-        int index = 0;
-        for (int i = 0; i < vignettesDone.Length; i++)
-        {
-            if (!vignettesDone[i])
-            {
-                index = i;
-                break;
-            }
-        }
-
+        
         for (int j = 0; j < vignettesDone.Length; j++)
         {
-            vignetteStarters[j].SetActive(j == index);
+            vignetteStarters[j].SetActive(!vignettesDone[j]);
         }
 
         Player.Instance.gameObject.transform.position = GameManager.Instance.lastPlayerPos;

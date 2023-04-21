@@ -34,17 +34,26 @@ public class GameManager : MonoBehaviour
 
     public float confidenceIncrease;
     [HideInInspector] public float currentConfidence;
-    [NonSerialized] public readonly bool[] VignettesDone = { false, false, false, false, false, false};
+    [NonSerialized] public bool[] VignettesDone;
 
     [HideInInspector] public Vector3 lastPlayerPos = new(1.5f,4.5f,18f);
 
+    private bool startedOnce;
     public Canvas canvas;
+
+    private AudioManager _audioManager;
     
-    private void Start()
+    public void Start()
     {
         lastPlayerPos = new Vector3(1.5f, 4.5f, 18f);
-        //canvas.transform.position = new Vector3(canvas.transform.position.x, canvas.transform.position.y, -0.1f);
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        VignettesDone = new []{ false, false, false, false, false, false};
+        if (!startedOnce)
+        {
+            /*_audioManager = GetComponent<AudioManager>();
+            _audioManager.Play("GameMusic");*/
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            startedOnce = true;
+        }
     }
     
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

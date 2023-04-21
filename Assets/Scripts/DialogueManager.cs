@@ -84,9 +84,16 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void DisplayImages() {
-        if (characterName != "") {
+        if (characterName != "?????") {
             
-            Character character = characters.Find(c => c.characterName == characterName);
+            Character character = characters.Find(c => c.characterName == "Ava");
+
+            Image currSprite = character.gameObject.GetComponent<Image>();
+            currSprite.sprite = character.characterPoses[pose];
+        }
+        else {
+            
+            Character character = characters.Find(c => c.characterName == "?????");
             
             Image currSprite = character.gameObject.GetComponent<Image>();
             currSprite.sprite = character.characterPoses[pose];

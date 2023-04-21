@@ -13,13 +13,7 @@ public class TitleScreenManager : MonoBehaviour
     /// </summary>
     [Header("Buttons")] public Button startButton;
     public Button exitButton;
-        
-    /// <summary>
-    /// The audio manager
-    /// </summary>
-    private AudioManager _audioManager;
-        
-        
+    
     /// <summary>
     /// Starts this instance.
     /// </summary>
@@ -27,18 +21,14 @@ public class TitleScreenManager : MonoBehaviour
     {
         startButton.onClick.AddListener(StartGame);
         exitButton.onClick.AddListener(ExitGame);
-        /*_audioManager = GetComponent<AudioManager>();
-            _audioManager.Play("MainMenu");*/
-
     }
         
 
     /// <summary>
     /// Starts the game.
     /// </summary>
-    private void StartGame()
+    private static void StartGame()
     {
-        //_audioManager.Stop("MenuMusic");
         SceneManager.LoadScene(1);
     }
 

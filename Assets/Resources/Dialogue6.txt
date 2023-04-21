@@ -1,0 +1,10 @@
+﻿?????;By the way, can you explain to me how you let yourself get like <i>this</i>? I feel gross just existing.;3
+?????;Look at you! That horrible patch sprouting above your lip, is that a mustache? - it makes a prepubescent boy look downright manly.;3
+?????;And that hair, jeez. Is it parted sideways and in the middle? I can hardly stand being near it, let alone look at it.;3
+?????;I’ll give you some credit - it certainly shows the sorry state you’re in.;3
+Ava;That's not true! It can’t be!;1
+Choice;I may get lazy with my appearance but that doesn’t reflect on my worth! I’m doing my best, but if I’m not doing well, I can’t look perfect!:good,6;You’re right, I can’t stand looking at myself like this. I should just do what mom says and try to look normal.:bad,8
+?????;Doesn’t change the fact you look awful;3
+Next Scene;;10
+?????;That sounds more like it. Try to actually follow through with what you say though.;3
+Next Scene;;10

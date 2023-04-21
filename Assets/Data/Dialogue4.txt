@@ -1,6 +1,0 @@
-﻿Narrator;A strange clone of Ava appears, smiling mockingly.;0
-?????;<i>Hahaha</i>. My god, you look <b>ridiculous</b>. This’ll be fun to watch.;0
-Ava;Who are you? What’s this? What’s happening???;0
-Narrator;She jumps at her doppelganger, trying to reach it. The entity dances around her every move, untouched;0
-?????;Oh, I’m no one. Merely a humble spectator. Go on. I’ll be watching.;0
-Next Scene;;10
